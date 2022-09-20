@@ -1,0 +1,249 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #860012;
+  --main-color-alt: #ff6aa5;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+p {
+  padding: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.me-auto {
+  margin-inline-start: auto !important;
+  margin-inline-end: inherit !important;
+}
+
+/*Start Form Fields CSS*/
+.form-control {
+  border-color: #ebebeb;
+  padding: 0.8rem 0.85rem;
+  height: calc(2.98em + 0.75rem + 0.125rem);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+select.form-control.has-value {
+  color: #b1b1b1 !important;
+  font-size: 1rem;
+}
+
+input[type]:-moz-placeholder,
+textarea:-moz-placeholder,
+select:-moz-placeholder,
+select.form-control.has-value {
+  /* Firefox 18- */
+  color: #b1b1b1;
+  font-size: 1rem;
+}
+
+input[type]::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder,
+select.form-control.has-value {
+  /* Firefox 19+ */
+  color: #b1b1b1;
+  font-size: 1rem;
+}
+
+input[type]:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder,
+select.form-control.has-value {
+  color: #b1b1b1;
+  font-size: 1rem;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus,
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus,
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
+textarea:focus,
+textarea:focus-visible,
+button:focus-visible,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*End Form Fields CSS*/
+
+.container-fluid {
+  width: 95%;
+}
+
+
+/* Start Main Title CSS */
+/* .main-title {
+  text-transform: uppercase;
+  margin: 0 auto 80px;
+  border: 1.5px solid black;
+  border-radius: 0.25rem;
+  padding: 10px 20px;
+  font-size: 30px;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: var(--main-transition);
+}
+
+.main-title::before,
+.main-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-title::before {
+  left: -30px;
+}
+
+.main-title::after {
+  right: -30px;
+}
+
+.main-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
+}
+
+.main-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s linear forwards;
+}
+
+.main-title:hover {
+  color: #ffffff;
+  border: 1.5px solid white;
+} */
+
+/* End Main Title CSS */
+
+/* End Global Rules */
+
+
+
+
+/* Start Media Queries */
+
+/* Small */
+@media (min-width: 768px) {}
+
+/* Medium */
+@media (min-width: 992px) {}
+
+/* Large */
+@media (min-width: 1200px) {}
+
+/* End Media Queries */
+
+
+
+/* Start Animations */
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* End Animations */
