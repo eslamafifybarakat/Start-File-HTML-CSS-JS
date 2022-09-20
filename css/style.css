@@ -145,7 +145,7 @@ button:focus {
 
 
 /* Start Main Title CSS */
-/* .main-title {
+.main-title {
   text-transform: uppercase;
   margin: 0 auto 80px;
   border: 1.5px solid black;
@@ -191,7 +191,7 @@ button:focus {
 .main-title:hover {
   color: #ffffff;
   border: 1.5px solid white;
-} */
+}
 
 /* End Main Title CSS */
 
